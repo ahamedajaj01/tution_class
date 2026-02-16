@@ -1,0 +1,5 @@
+@import "tailwindcss";
+@theme {
+  --color-brit-footer: #004047; /* Dark teal background */
+  --color-brit-accent: #22c55e; /* Green for social icons on hover */
+}
