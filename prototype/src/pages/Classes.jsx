@@ -11,13 +11,13 @@ const ClassesPage = () => {
 
   return (
     <div className="bg-white font-sans text-slate-900">
-      
+
       {/* 1. Page Header (Hero) */}
       <section className="bg-[#004047] py-24 px-6 text-center text-white">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-5xl md:text-7xl font-bold mb-6">Classes</h1>
           <p className="text-lg md:text-xl opacity-90 leading-relaxed">
-            Welcome to our center! We offer a wide variety of classes 
+            Welcome to Leafclutch Technologies! We offer a wide variety of classes
             taught by highly experienced and passionate teachers.
           </p>
         </div>
@@ -33,8 +33,8 @@ const ClassesPage = () => {
 
           <div className="bg-white rounded-2xl shadow-sm border border-slate-100 overflow-hidden">
             {courses.map((course, index) => (
-              <div 
-                key={index} 
+              <div
+                key={index}
                 className="p-8 md:p-12 border-b border-slate-50 last:border-none hover:bg-slate-50 transition-colors group"
               >
                 <h3 className="text-2xl font-bold text-[#004047] mb-4 group-hover:text-[#2ecc71] transition-colors">
@@ -53,8 +53,8 @@ const ClassesPage = () => {
       <section className="py-20 px-6">
         {/* Stats Grid Background */}
         <div className="max-w-7xl mx-auto mb-20 relative overflow-hidden py-12 border-y border-slate-100">
-          <div 
-            className="absolute inset-0 opacity-5 pointer-events-none" 
+          <div
+            className="absolute inset-0 opacity-5 pointer-events-none"
             style={{ backgroundImage: 'linear-gradient(#004047 1px, transparent 1px), linear-gradient(90deg, #004047 1px, transparent 1px)', backgroundSize: '25px 25px' }}
           ></div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center relative z-10">
@@ -70,9 +70,9 @@ const ClassesPage = () => {
           <h2 className="text-4xl font-bold text-[#004047] mb-12">Our Popular Classes</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
-              { t: "11 Plus", i: "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?q=80&w=400" },
-              { t: "Secondary", i: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=400" },
-              { t: "Computer Science", i: "https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=400" }
+              { t: "11 Plus", i: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=400" },
+              { t: "Secondary", i: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=400" },
+              { t: "Computer Science", i: "https://images.unsplash.com/photo-1504639725590-34d0984388bd?q=80&w=400" }
             ].map((item, i) => (
               <div key={i} className="group cursor-pointer">
                 <div className="rounded-xl overflow-hidden mb-6 h-64 shadow-md">

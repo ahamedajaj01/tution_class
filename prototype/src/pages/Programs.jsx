@@ -7,7 +7,7 @@ export default function Programs() {
         className="relative h-[420px] flex items-center justify-center text-white"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1588072432836-e10032774350')",
+            "url('https://images.unsplash.com/photo-1544377193-33dcf4d68fb5?q=80&w=1400')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -32,7 +32,7 @@ export default function Programs() {
           {/* GCSE */}
           <div className="bg-white shadow-sm hover:shadow-md transition">
             <img
-              src="https://images.unsplash.com/photo-1523240795612-9a054b0db644"
+              src="https://images.unsplash.com/photo-1522881451255-f59ad836fdfb?q=80&w=600"
               className="h-48 w-full object-cover"
             />
             <div className="p-6 text-center">
@@ -52,7 +52,7 @@ export default function Programs() {
           {/* A-Level */}
           <div className="bg-white shadow-sm hover:shadow-md transition">
             <img
-              src="https://images.unsplash.com/photo-1509062522246-3755977927d7"
+              src="https://images.unsplash.com/photo-1510070112810-d4e9a46d9e91?q=80&w=600"
               className="h-48 w-full object-cover"
             />
             <div className="p-6 text-center">
@@ -72,7 +72,7 @@ export default function Programs() {
           {/* 11 Plus */}
           <div className="bg-white shadow-sm hover:shadow-md transition">
             <img
-              src="https://images.unsplash.com/photo-1584697964403-0a1b6e7e3e8b"
+              src="https://images.unsplash.com/photo-1580894732444-8ecdead79730?q=80&w=600"
               className="h-48 w-full object-cover"
             />
             <div className="p-6 text-center">
@@ -92,7 +92,7 @@ export default function Programs() {
           {/* Secondary */}
           <div className="bg-white shadow-sm hover:shadow-md transition">
             <img
-              src="https://images.unsplash.com/photo-1523580846011-d3a5bc25702b"
+              src="https://images.unsplash.com/photo-1523050335456-c48d49742122?q=80&w=600"
               className="h-48 w-full object-cover"
             />
             <div className="p-6 text-center">
@@ -112,7 +112,7 @@ export default function Programs() {
           {/* Computer Science */}
           <div className="bg-white shadow-sm hover:shadow-md transition">
             <img
-              src="https://images.unsplash.com/photo-1519389950473-47ba0277781c"
+              src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=600"
               className="h-48 w-full object-cover"
             />
             <div className="p-6 text-center">
@@ -185,7 +185,7 @@ export default function Programs() {
           <div className="bg-white p-6 shadow-sm">
             <div className="text-yellow-400 mb-2">★★★★★</div>
             <p className="text-gray-600 text-sm mb-4">
-              Highly recommended tuition centre with supportive staff and great
+              Highly recommended tuition centre (Leafclutch Technologies) with supportive staff and great
               results.
             </p>
             <p className="text-sm font-medium">Jane W.</p>

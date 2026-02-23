@@ -1,7 +1,7 @@
 const AboutUs = () => {
   const features = [
-    "Flexibility", "Qualified Tutors", 
-    "Variety of courses", "Engaging Classrooms", 
+    "Flexibility", "Qualified Tutors",
+    "Variety of courses", "Engaging Classrooms",
     "Proven Success", "Friendly Support"
   ];
 
@@ -17,19 +17,19 @@ const AboutUs = () => {
       {/* Why Choose Us Section */}
       <section className="py-20 px-6 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-          
+
           {/* Left Content */}
           <div className="space-y-6">
             <span className="text-[#2ecc71] font-bold text-sm bg-[#eefdf3] px-3 py-1 rounded">
               About Us
             </span>
             <h2 className="text-4xl font-bold text-[#004047]">
-              Why Our Center?
+              Why Leafclutch Technologies?
             </h2>
             <p className="text-slate-600 leading-relaxed">
-              We pride ourselves on a decade-long commitment to student success. 
-              Our center is renowned for its expert tutoring across a variety of subjects. 
-              We believe every student deserves personalized attention, and our 
+              We pride ourselves on a decade-long commitment to student success.
+              Leafclutch Technologies is renowned for its expert tutoring across a variety of subjects.
+              We believe every student deserves personalized attention, and our
               dedicated tutors craft lessons tailored to individual needs.
             </p>
 
@@ -51,9 +51,9 @@ const AboutUs = () => {
           {/* Right Image */}
           <div className="relative group">
             <div className="absolute inset-0 bg-[#004047] rounded-xl rotate-3 group-hover:rotate-0 transition-transform duration-500"></div>
-            <img 
-              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=800" 
-              alt="Learning Environment" 
+            <img
+              src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=800"
+              alt="Engaged students"
               className="relative z-10 rounded-xl shadow-xl w-full h-[450px] object-cover"
             />
           </div>
@@ -63,8 +63,8 @@ const AboutUs = () => {
       {/* Statistics Section with Grid Background */}
       <section className="relative py-20 border-t border-slate-100 overflow-hidden">
         {/* Decorative Grid Background - Simple CSS trick for the graph look */}
-        <div 
-          className="absolute inset-0 opacity-10 pointer-events-none" 
+        <div
+          className="absolute inset-0 opacity-10 pointer-events-none"
           style={{ backgroundImage: 'linear-gradient(#004047 1px, transparent 1px), linear-gradient(90deg, #004047 1px, transparent 1px)', backgroundSize: '40px 40px' }}
         ></div>
 

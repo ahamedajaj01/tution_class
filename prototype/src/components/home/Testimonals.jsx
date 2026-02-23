@@ -1,9 +1,23 @@
+import { useRef } from 'react';
+
 const Testimonials = () => {
+  const scrollRef = useRef(null);
+
+  const scroll = (direction) => {
+    if (scrollRef.current) {
+      const scrollAmount = 400; // Adjust based on card width
+      scrollRef.current.scrollBy({
+        left: direction === 'left' ? -scrollAmount : scrollAmount,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   const reviews = [
     {
       name: "Anish B.",
       title: "Absolutely Brilliant!",
-      text: "I can't recommend this center enough! The tutors truly understand my child's needs, and the results have been amazing."
+      text: "I can't recommend Leafclutch Technologies enough! The tutors truly understand my child's needs, and the results have been amazing."
     },
     {
       name: "Liam J.",
@@ -13,7 +27,7 @@ const Testimonials = () => {
     {
       name: "Thomas S.",
       title: "Professional and friendly!",
-      text: "This center offers a welcoming atmosphere and effective teaching strategies, helping my child excel in school."
+      text: "Leafclutch Technologies offers a welcoming atmosphere and effective teaching strategies, helping my child excel in school."
     },
     {
       name: "Daniel H.",
@@ -25,7 +39,7 @@ const Testimonials = () => {
   return (
     <section className="bg-white py-20 px-6">
       <div className="max-w-7xl mx-auto">
-        
+
         {/* Header Area */}
         <div className="flex flex-col md:flex-row justify-between items-end mb-12 gap-6">
           <div className="text-left">
@@ -39,21 +53,29 @@ const Testimonials = () => {
 
           {/* Navigation Buttons */}
           <div className="flex gap-4">
-            <button className="w-12 h-12 rounded-full border-2 border-[#2ecc71] text-[#2ecc71] flex items-center justify-center hover:bg-[#2ecc71] hover:text-white transition-all duration-300 cursor-pointer">
+            <button
+              onClick={() => scroll('left')}
+              className="w-12 h-12 rounded-full border-2 border-[#2ecc71] text-[#2ecc71] flex items-center justify-center hover:bg-[#2ecc71] hover:text-white transition-all duration-300 cursor-pointer"
+            >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" /></svg>
             </button>
-            <button className="w-12 h-12 rounded-full bg-[#2ecc71] text-white flex items-center justify-center hover:bg-[#27ae60] shadow-lg transition-all duration-300 cursor-pointer">
+            <button
+              onClick={() => scroll('right')}
+              className="w-12 h-12 rounded-full bg-[#2ecc71] text-white flex items-center justify-center hover:bg-[#27ae60] shadow-lg transition-all duration-300 cursor-pointer"
+            >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" /></svg>
             </button>
           </div>
         </div>
 
         {/* Testimonials Grid/Scroll Area */}
-        {/* 'overflow-x-auto' allows sliding on mobile, while the CSS below hides the bar */}
-        <div className="flex gap-6 overflow-x-auto pb-4 snap-x scroll-smooth [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]">
+        <div
+          ref={scrollRef}
+          className="flex gap-6 overflow-x-auto pb-4 snap-x scroll-smooth [&::-webkit-scrollbar]:hidden [-ms-overflow-style:none] [scrollbar-width:none]"
+        >
           {reviews.map((review, index) => (
-            <div 
-              key={index} 
+            <div
+              key={index}
               className="min-w-[320px] md:min-w-[400px] bg-[#f4fafa] p-10 rounded-3xl border border-white shadow-sm snap-start transition-all duration-300 hover:shadow-xl hover:-translate-y-2 group"
             >
               {/* Star Rating */}
@@ -68,11 +90,11 @@ const Testimonials = () => {
               <h4 className="text-[#004047] font-bold text-2xl mb-4 group-hover:text-[#2ecc71] transition-colors">
                 {review.title}
               </h4>
-              
+
               <p className="text-slate-600 leading-relaxed mb-10 italic">
                 "{review.text}"
               </p>
-              
+
               <div className="pt-6 border-t border-slate-200 flex justify-between items-center">
                 <span className="text-[#004047] font-extrabold tracking-tight">
                   {review.name}

@@ -8,6 +8,7 @@ import ClassList from "./home/ClassList";
 import Testimonials from "./home/Testimonals";
 import OurTeams from "./home/OurTeams";
 import RecentPosts from "./home/RecentPosts";
+import ScrollToTop from "./layout/ScrollToTop";
 
 
-export {Navbar, Footer, Hero, OurClass, AboutUs, OurMedia, ClassList, Testimonials, OurTeams, RecentPosts};
+export { Navbar, Footer, Hero, OurClass, AboutUs, OurMedia, ClassList, Testimonials, OurTeams, RecentPosts, ScrollToTop };
