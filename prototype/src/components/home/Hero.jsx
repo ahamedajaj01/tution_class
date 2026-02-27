@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router-dom";
+
 const Hero = () => {
+  const navigate = useNavigate();
   return (
     /* Background color #f4fafa used directly via arbitrary value */
     <section className="bg-[#f4fafa] py-16 px-6 md:py-24 overflow-hidden">
@@ -25,10 +28,16 @@ const Hero = () => {
 
           {/* Action Buttons using Hex Codes */}
           <div className="flex flex-wrap gap-4 pt-4">
-            <button className="bg-[#2ecc71] text-white px-8 py-4 rounded-md font-bold hover:bg-[#27ae60] transition-all hover:shadow-lg active:scale-95">
+            <button 
+              onClick={() => navigate('/classes')}
+              className="bg-[#2ecc71] text-white px-8 py-4 rounded-md font-bold hover:bg-[#27ae60] transition-all hover:shadow-lg active:scale-95 cursor-pointer"
+            >
               Choose Class
             </button>
-            <button className="bg-[#004047] text-white px-8 py-4 rounded-md font-bold hover:bg-[#002f35] transition-all hover:shadow-lg active:scale-95">
+            <button 
+              onClick={() => navigate('/book-now')}
+              className="bg-[#004047] text-white px-8 py-4 rounded-md font-bold hover:bg-[#002f35] transition-all hover:shadow-lg active:scale-95 cursor-pointer"
+            >
               Get Started
             </button>
           </div>

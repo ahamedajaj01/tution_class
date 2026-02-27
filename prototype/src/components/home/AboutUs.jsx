@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router-dom";
+
 const AboutUs = () => {
+  const navigate = useNavigate();
   const features = [
     "Flexibility", "Qualified Tutors",
     "Variety of courses", "Engaging Classrooms",
@@ -43,7 +46,10 @@ const AboutUs = () => {
               ))}
             </ul>
 
-            <button className="mt-8 bg-[#004047] text-white px-8 py-3 rounded shadow-md hover:bg-[#002f35] transition-all active:scale-95">
+            <button 
+              onClick={() => navigate('/about')}
+              className="mt-8 bg-[#004047] text-white px-8 py-3 rounded shadow-md hover:bg-[#002f35] transition-all active:scale-95 cursor-pointer"
+            >
               More About Us
             </button>
           </div>

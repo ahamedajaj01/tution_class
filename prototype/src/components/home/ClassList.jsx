@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router-dom";
+
 const ClassList = () => {
+  const navigate = useNavigate();
   const classes = [
     {
       name: "GCSE",
@@ -67,7 +70,10 @@ const ClassList = () => {
         </div>
 
         {/* Read More Button */}
-        <button className="mt-12 bg-[#004047] text-white px-10 py-4 rounded-md font-bold transition-all hover:bg-[#002f35] hover:shadow-lg active:scale-95">
+        <button 
+          onClick={() => navigate('/classes')}
+          className="mt-12 bg-[#004047] text-white px-10 py-4 rounded-md font-bold transition-all hover:bg-[#002f35] hover:shadow-lg active:scale-95 cursor-pointer"
+        >
           Read More
         </button>
 

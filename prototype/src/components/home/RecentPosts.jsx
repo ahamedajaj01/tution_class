@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router-dom";
+
 const RecentPosts = () => {
+  const navigate = useNavigate();
   const secondaryPosts = [
     {
       category: "Learning Strategies",
@@ -38,7 +41,10 @@ const RecentPosts = () => {
               <span className="text-[#2ecc71]">latest news</span>
             </h2>
           </div>
-          <button className="bg-white text-[#004047] border-2 border-[#004047] px-8 py-3 rounded-full font-bold hover:bg-[#004047] hover:text-white transition-all duration-300 shadow-sm active:scale-95">
+          <button 
+            onClick={() => navigate('/programs')}
+            className="bg-white text-[#004047] border-2 border-[#004047] px-8 py-3 rounded-full font-bold hover:bg-[#004047] hover:text-white transition-all duration-300 shadow-sm active:scale-95 cursor-pointer"
+          >
             View All Posts
           </button>
         </div>
@@ -47,7 +53,10 @@ const RecentPosts = () => {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
 
           {/* Main Featured Post (Left - 7 Columns) */}
-          <div className="lg:col-span-7 group cursor-pointer bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500">
+          <div 
+            onClick={() => navigate('/programs')}
+            className="lg:col-span-7 group cursor-pointer bg-white rounded-3xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500"
+          >
             <div className="relative overflow-hidden h-[350px] md:h-[500px]">
               <div className="absolute top-6 left-6 z-20">
                 <span className="bg-[#2ecc71] text-white text-[10px] font-bold px-4 py-2 rounded-full uppercase tracking-tighter">
@@ -85,7 +94,11 @@ const RecentPosts = () => {
           {/* Side Posts Stack (Right - 5 Columns) */}
           <div className="lg:col-span-5 flex flex-col gap-8">
             {secondaryPosts.map((post, index) => (
-              <div key={index} className="flex gap-6 group cursor-pointer bg-white p-4 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300">
+              <div 
+                key={index}
+                onClick={() => navigate('/programs')}
+                className="flex gap-6 group cursor-pointer bg-white p-4 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300"
+              >
                 <div className="relative w-24 h-24 md:w-32 md:h-32 flex-shrink-0 overflow-hidden rounded-xl">
                   <img
                     src={post.image}

@@ -1,6 +1,8 @@
+import { useNavigate } from "react-router-dom";
 import { Facebook, Instagram } from 'lucide-react'
 
 const OurTeams = () => {
+  const navigate = useNavigate();
   const teachers = [
     { name: "Vijay", role: "Maths Lead", img: "https://images.unsplash.com/photo-1566492031773-4f4e44671857?q=80&w=400" },
     { name: "Nazim", role: "Science Specialist", img: "https://images.unsplash.com/photo-1556157382-97dee2dcbfe?q=80&w=400" },
@@ -41,7 +43,10 @@ const OurTeams = () => {
             </div>
           ))}
         </div>
-        <button className="mt-16 bg-[#004047] text-white px-10 py-4 rounded-md font-bold transition-all hover:bg-[#002f35] hover:shadow-xl active:scale-95">
+        <button 
+          onClick={() => navigate('/programs')}
+          className="mt-16 bg-[#004047] text-white px-10 py-4 rounded-md font-bold transition-all hover:bg-[#002f35] hover:shadow-xl active:scale-95 cursor-pointer"
+        >
           View All
         </button>
       </div>

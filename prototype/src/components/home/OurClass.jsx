@@ -1,4 +1,7 @@
+import { useNavigate } from "react-router-dom";
+
 const OurClass = () => {
+  const navigate = useNavigate();
   const classData = [
     {
       title: "GCSE",
@@ -37,8 +40,9 @@ const OurClass = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {classData.map((item, index) => (
             <div 
-              key={index} 
-              className="bg-white rounded-xl overflow-hidden shadow-lg border border-slate-100 transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl group"
+              key={index}
+              onClick={() => navigate('/classes')}
+              className="bg-white rounded-xl overflow-hidden shadow-lg border border-slate-100 transition-all duration-300 hover:-translate-y-3 hover:shadow-2xl group cursor-pointer"
             >
               {/* Card Image */}
               <div className="h-64 overflow-hidden">
@@ -70,7 +74,10 @@ const OurClass = () => {
 
         {/* View All Button */}
         <div className="mt-16">
-          <button className="bg-[#004047] text-white px-10 py-4 rounded-md font-bold transition-all duration-300 hover:bg-[#002f35] hover:shadow-xl active:scale-95">
+          <button 
+            onClick={() => navigate('/classes')}
+            className="bg-[#004047] text-white px-10 py-4 rounded-md font-bold transition-all duration-300 hover:bg-[#002f35] hover:shadow-xl active:scale-95 cursor-pointer"
+          >
             View All
           </button>
         </div>
