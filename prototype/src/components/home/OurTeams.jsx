@@ -5,7 +5,7 @@ const OurTeams = () => {
   const navigate = useNavigate();
   const teachers = [
     { name: "Vijay", role: "Maths Lead", img: "https://images.unsplash.com/photo-1566492031773-4f4e44671857?q=80&w=400" },
-    { name: "Nazim", role: "Science Specialist", img: "https://images.unsplash.com/photo-1556157382-97dee2dcbfe?q=80&w=400" },
+    { name: "Nazim", role: "Science Specialist", img: "https://images.unsplash.com/photo-1608391957733-08caeb461b57?q=80&w=955&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" },
     { name: "Sadik", role: "English Expert", img: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=400" },
   ];
 
