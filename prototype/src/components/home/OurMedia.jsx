@@ -17,21 +17,22 @@ const OurMedia = () => {
           Our sessions are designed to be vibrant, supportive, and highly effective.
         </p>
 
-        {/* Video Container - Aspect Ratio 16:9 */}
-        <div className="relative max-w-5xl mx-auto rounded-2xl overflow-hidden shadow-2xl border-8 border-white bg-slate-100">
-          <div className="aspect-video w-full">
-            <iframe
-              className="w-full h-full"
-              src="https://www.youtube.com/embed/-_uS9h_7Ehc"
-              title="The Importance of Education"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullScreen
-            ></iframe>
-          </div>
+      {/* Video Container - Aspect Ratio 16:9 */}
+<div className="relative max-w-3xl mx-auto rounded-2xl overflow-hidden shadow-2xl border-8 border-white bg-slate-100">
+  <div className="aspect-video w-full">
 
+    <iframe
+      className="w-full h-full"
+      src="https://www.facebook.com/plugins/video.php?href=https://www.facebook.com/reel/1315094483710307&show_text=false"
+      title="The Importance of Education"
+      frameBorder="0"
+      scrolling="no"
+      allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+      allowFullScreen
+    ></iframe>
 
-        </div>
+  </div>
+</div>
 
         {/* Text Stats Overlay (Recreating the text from your image) */}
         <div className="mt-8">

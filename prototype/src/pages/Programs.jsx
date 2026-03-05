@@ -7,7 +7,7 @@ export default function Programs() {
         className="relative h-[420px] flex items-center justify-center text-white"
         style={{
           backgroundImage:
-            "url('https://images.unsplash.com/photo-1544377193-33dcf4d68fb5?q=80&w=1400')",
+            "url('https://images.unsplash.com/photo-1509062522246-3755977927d7?w=1400')",
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -32,7 +32,8 @@ export default function Programs() {
           {/* GCSE */}
           <div className="bg-white shadow-sm hover:shadow-md transition">
             <img
-              src="https://images.unsplash.com/photo-1522881451255-f59ad836fdfb?q=80&w=600"
+              src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?w=600"
+              alt="GCSE study"
               className="h-48 w-full object-cover"
             />
             <div className="p-6 text-center">
@@ -52,7 +53,8 @@ export default function Programs() {
           {/* A-Level */}
           <div className="bg-white shadow-sm hover:shadow-md transition">
             <img
-              src="https://images.unsplash.com/photo-1510070112810-d4e9a46d9e91?q=80&w=600"
+              src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600"
+              alt="A level students studying"
               className="h-48 w-full object-cover"
             />
             <div className="p-6 text-center">
@@ -72,7 +74,8 @@ export default function Programs() {
           {/* 11 Plus */}
           <div className="bg-white shadow-sm hover:shadow-md transition">
             <img
-              src="https://images.unsplash.com/photo-1580894732444-8ecdead79730?q=80&w=600"
+              src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=600"
+              alt="primary students learning"
               className="h-48 w-full object-cover"
             />
             <div className="p-6 text-center">
@@ -92,7 +95,8 @@ export default function Programs() {
           {/* Secondary */}
           <div className="bg-white shadow-sm hover:shadow-md transition">
             <img
-              src="https://images.unsplash.com/photo-1523050335456-c48d49742122?q=80&w=600"
+              src="https://images.unsplash.com/photo-1498075702571-ecb018f3752d?w=600"
+              alt="secondary school students"
               className="h-48 w-full object-cover"
             />
             <div className="p-6 text-center">
@@ -112,7 +116,8 @@ export default function Programs() {
           {/* Computer Science */}
           <div className="bg-white shadow-sm hover:shadow-md transition">
             <img
-              src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?q=80&w=600"
+              src="https://images.unsplash.com/photo-1610563166150-b34df4f3bcd6?q=80&w=1076&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+              alt="computer programming"
               className="h-48 w-full object-cover"
             />
             <div className="p-6 text-center">
@@ -150,45 +155,6 @@ export default function Programs() {
           <div>
             <h2 className="text-4xl font-semibold text-teal-800">5</h2>
             <p className="text-gray-500 text-sm mt-2">Special Classes</p>
-          </div>
-        </div>
-      </section>
-
-      {/* ================= TESTIMONIALS ================= */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-6xl mx-auto px-6 text-center mb-12">
-          <p className="text-green-600 text-sm mb-2">Testimonials</p>
-          <h2 className="text-3xl font-semibold text-gray-800">
-            What Our Clients Say
-          </h2>
-        </div>
-
-        <div className="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-6">
-          <div className="bg-white p-6 shadow-sm">
-            <div className="text-yellow-400 mb-2">★★★★★</div>
-            <p className="text-gray-600 text-sm mb-4">
-              Seriously amazing! Education provides a comprehensive and flexible
-              learning environment.
-            </p>
-            <p className="text-sm font-medium">Lauren N.</p>
-          </div>
-
-          <div className="bg-white p-6 shadow-sm">
-            <div className="text-yellow-400 mb-2">★★★★★</div>
-            <p className="text-gray-600 text-sm mb-4">
-              Professional tutors and structured lessons. My child improved
-              significantly.
-            </p>
-            <p className="text-sm font-medium">Samantha P.</p>
-          </div>
-
-          <div className="bg-white p-6 shadow-sm">
-            <div className="text-yellow-400 mb-2">★★★★★</div>
-            <p className="text-gray-600 text-sm mb-4">
-              Highly recommended tuition centre (Leafclutch Technologies) with supportive staff and great
-              results.
-            </p>
-            <p className="text-sm font-medium">Jane W.</p>
           </div>
         </div>
       </section>
